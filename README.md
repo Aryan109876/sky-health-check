@@ -189,4 +189,5 @@ GROUP BY c.id, c.title;
 
 # Team roles 
 frontend: Aryan and Waleed
-backend: 
+backend: everyone
+SQLite: Gaganpreet
