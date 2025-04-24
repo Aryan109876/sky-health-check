@@ -186,3 +186,7 @@ GROUP BY c.id, c.title;
 3. Enhance analytics with machine learning insights
 4. Implement automated testing pipeline
 5. Add performance monitoring and logging
+
+# Team roles 
+frontend: Aryan and Waleed
+backend: 
