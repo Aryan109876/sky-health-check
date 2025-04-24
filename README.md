@@ -140,7 +140,7 @@ The mentor's feedback on implementing gradual data aggregation for large teams s
 ## 🛠️ Technical Stack
 
 - **Backend Framework**: Django 5.0.2, Django REST Framework 3.14.0
-- **Database**: SQLite (development), PostgreSQL (production-ready)
+- **Database**: SQLite (development)
 - **Authentication**: Session-based with role validation
 - **Testing**: Django Test Framework, Pytest
 - **Frontend Integration**: React.js, TailwindCSS
