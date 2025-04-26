@@ -1,44 +1,107 @@
 # Sky Health Check Application
+A collaborative web application designed to manage and visualize software development team health checks using the Spotify Health Check model. This application helps teams track their wellbeing and performance, focusing on continuous improvement by collecting and visualizing feedback at regular intervals.
 
-A comprehensive web application for recording and visualizing software development team health checks using the Spotify Health Check model.
+ # Team Members
+Aryan Rahman – Project Manager, Frontend Developer, Database Administrator, Backend Developer
 
-## 🚀 My Individual Contribution
+Muhammed Mujib – Backend Developer, Frontend Developer
 
-I was responsible for developing the core health check functionality, including:
+Waleed Imran – Frontend Developer, Database Administrator, Backend Developer
 
-### Key Files and Components
+Duane Abbia-Kwakte – Backend Developer, Frontend Developer
 
-- `backend/health_check/models.py`: Database schema and model relationships
-- `backend/health_check/views.py`: API endpoints and business logic
-- `backend/health_check/serializers.py`: Data serialization and validation
-- `backend/health_check/tests.py`: Comprehensive test suite
-- `backend/health_check/urls.py`: API routing and endpoint configuration
+Gaganpreet – Backend Developer, Frontend Developer
 
-### Key Features I Implemented
+# Project Overview & Goals
+The Sky Health Check Application enables software development teams to regularly assess their team health using the Spotify Health Check model. Teams submit votes on various health cards that reflect the current state of their team (Red, Amber, Green). This feedback is aggregated and displayed in an analytics dashboard for team leaders to monitor team morale and identify areas for improvement.
 
-1. **Authentication & Authorization**
-   - Role-based user system (Engineer, Team Leader, Department Leader, Senior Manager)
-   - Secure session management
-   - Permission-based access control
+# Key Features:
+Role-Based Authentication: A secure, role-based authentication system where team members, team leaders, and senior managers can interact with the application based on their assigned roles.
 
-2. **Health Check Core**
-   - Health card management
-   - Voting system with status (Red/Amber/Green) and trends
-   - Session management for periodic health checks
+Health Check Voting System: Allows team members to vote on health cards, indicating the current state of the team’s health.
 
-3. **Analytics & Reporting**
-   - Team-level health summaries
-   - Department-wide analytics
-   - Historical trend analysis
+Analytics Dashboard: Displays aggregated data of health check results, with historical trend analysis at various levels (team, department, organization).
 
-## 🧪 Testing Documentation
+Security: Application includes robust security measures such as input validation, session management, and data protection.
 
-Tests cover ~90% of backend logic, including views, serializers, and role-based access controls. The test suite in `backend/health_check/tests.py` includes unit tests, integration tests, and edge cases.
+# Team Contributions
+Each team member contributed to the project in various capacities, from backend and frontend development to database administration. Below are the specific roles and contributions for each member:
 
-### API Endpoint Tests
+# Aryan Rahman – Project Manager, Frontend Developer, Database Administrator, Backend Developer
+Role as Project Manager: Led the project by coordinating between all team members, managing timelines, and ensuring the successful delivery of the project. Managed the overall flow of the project, delegating tasks, and tracking progress.
 
-```python
-# Example test output for health check voting endpoint
+Frontend Contributions: Developed the user interface, including team health cards and the analytics dashboard.
+
+Database Administration: Assisted in creating and managing database schema and optimized queries for performance.
+
+Backend Contributions: Worked on backend logic for health check voting and session management.
+
+# Key Contributions:
+Project Management: Oversaw the progress of the project, coordinated the team’s efforts, and ensured timely delivery.
+
+UI Design: Developed responsive UI components, such as health cards and team summaries.
+
+Database Optimization: Worked on optimizing database queries for scalability and performance.
+
+Backend Development: Contributed to the logic for health check sessions and user authentication.
+
+# Muhammed Mujib – Backend Developer, Frontend Developer
+Backend Development: Designed and developed the core backend logic, including health check voting functionality and session management.
+
+Frontend Development: Worked on integrating the frontend interface with the backend API, ensuring smooth data flow between the two.
+
+# Key Contributions:
+Backend Logic: Implemented API endpoints for submitting votes, managing health check sessions, and handling user data.
+
+Frontend Integration: Worked on integrating backend API with frontend components.
+
+Security: Contributed to implementing role-based access control and ensuring secure data handling.
+
+# Waleed Imran – Frontend Developer, Database Administrator, Backend Developer
+Frontend Development: Developed components for displaying team health status and visualizations.
+
+Database Administration: Assisted in setting up and optimizing the database for efficient data retrieval.
+
+Backend Development: Contributed to the API logic for health check voting and session management.
+
+# Key Contributions:
+UI Development: Created the health card interface and the analytics dashboard.
+
+Database Management: Optimized queries to improve the speed of data retrieval.
+
+API Development: Worked on backend APIs for submitting votes and storing team health data.
+
+# Duane Abbia-Kwakte – Backend Developer, Frontend Developer
+Backend Development: Developed and maintained API endpoints to handle the core health check functionality.
+
+Frontend Development: Worked with the team to create dynamic and responsive UI components for displaying team health data.
+
+# Key Contributions:
+API Endpoints: Developed API endpoints to handle health check data and interactions.
+
+Frontend Implementation: Collaborated on implementing the UI for submitting health check votes and viewing team summaries.
+
+Gaganpreet – Backend Developer, Frontend Developer
+Backend Development: Worked on backend logic and implemented various API endpoints for handling health checks and team data.
+
+Frontend Development: Assisted in developing the frontend components and ensuring smooth interaction with the backend.
+
+Key Contributions:
+API Logic: Helped with the implementation of API endpoints for health check data submission.
+
+Frontend Integration: Contributed to the development of interactive UI components and ensured smooth integration with the backend.
+
+🧪 Testing Documentation
+Testing played a crucial role in ensuring the stability and reliability of the application. The team performed extensive backend and frontend testing, covering all critical features.
+
+Backend Testing
+The backend tests focus on validating API responses, role-based access control, and the voting functionality.
+
+Example API Endpoint Test
+python
+Copy
+Edit
+# Example Test: POST /api/votes/
 POST /api/votes/
 Request:
 {
@@ -59,135 +122,22 @@ Response (200 OK):
     "trend": "up",
     "created_at": "2024-02-20T10:30:00Z"
 }
-```
+# Manual Testing Scenarios
+User Authentication: Ensured that only authorized users could access specific data, with proper role-based redirects.
 
-### Manual Testing Scenarios
+Health Check Voting: Tested the voting system, including preventing duplicate votes and ensuring proper vote recording.
 
-1. **User Authentication**
-   ✅ Successful login with valid credentials
-   ✅ Proper error handling for invalid credentials
-   ✅ Role-based redirect after login
+Data Access Control: Verified that team leaders, department leaders, and senior managers could access data according to their role permissions.
 
-2. **Health Check Voting**
-   ✅ Engineers can submit votes
-   ✅ Vote updates reflect immediately
-   ✅ Duplicate votes prevented
-   ✅ Historical votes preserved
+# Future Improvements
+As the application evolves, the following features and improvements are planned:
 
-3. **Data Access Control**
-   ✅ Team leaders can only view their team's data
-   ✅ Department leaders can view all teams in their department
-   ✅ Senior managers can access all data
+Real-Time Updates: Integrate WebSockets for real-time updates to the health check voting system.
 
-### Error Handling Tests
+Advanced Analytics: Implement machine learning to provide insights and predict team health trends.
 
-```python
-# Example error handling test output
-POST /api/votes/ (Invalid data)
-Request:
-{
-    "session": 999,  # Non-existent session
-    "card": 1,
-    "status": "invalid"
-}
-Response (400 Bad Request):
-{
-    "errors": {
-        "session": ["Invalid session ID"],
-        "status": ["Status must be one of: red, amber, green"]
-    }
-}
-```
+Export Functionality: Enable users to export health check reports in PDF or CSV formats.
 
-## 💭 Feedback and Reflection
+CI/CD Integration: Set up continuous integration and deployment pipelines for automated testing and deployment.
 
-Throughout the project, I coordinated closely with frontend and other backend developers via GitHub Issues and weekly standups to ensure integration and consistency.
-
-### Feedback Received
-
-1. From Team Lead (Sarah):
-   > "The role-based access control implementation is solid, but we could improve the error messages for better user experience."
-
-   **Action Taken:** Implemented more user-friendly error messages and added detailed validation feedback.
-
-2. From Peer Review (Mike):
-   > "Consider adding batch operations for voting to improve performance."
-
-   **Action Taken:** Implemented bulk vote submission and optimized database queries.
-
-### Feedback Given
-
-1. To Backend Developer (Alex):
-   - Suggested implementing request caching for frequently accessed data
-   - Recommended adding rate limiting for API endpoints
-   - Provided code review focusing on query optimization
-
-2. To Frontend Developer (Emma):
-   - Proposed improvements for error state handling
-   - Suggested implementing loading states for better UX
-
-### Industry Mentor Reflection
-
-Working with our industry mentor from Sky provided valuable insights into real-world health check implementations:
-
-1. Learned about scaling challenges in large organizations
-2. Gained understanding of data privacy considerations
-3. Implemented industry best practices for security
-4. Adopted professional code review processes
-
-The mentor's feedback on implementing gradual data aggregation for large teams significantly improved our application's performance.
-
-## 🛠️ Technical Stack
-
-- **Backend Framework**: Django 5.0.2, Django REST Framework 3.14.0
-- **Database**: SQLite (development)
-- **Authentication**: Session-based with role validation
-- **Testing**: Django Test Framework, Pytest
-- **Frontend Integration**: React.js, TailwindCSS
-- **API Documentation**: OpenAPI/Swagger
-- **Version Control**: Git with feature branch workflow
-
-### Database Schema Optimization
-
-```sql
--- Example of optimized query for team health summary
-SELECT 
-    c.title,
-    COUNT(CASE WHEN v.status = 'green' THEN 1 END) as green_count,
-    COUNT(CASE WHEN v.status = 'amber' THEN 1 END) as amber_count,
-    COUNT(CASE WHEN v.status = 'red' THEN 1 END) as red_count
-FROM health_check_card c
-LEFT JOIN health_check_vote v ON c.id = v.card_id
-WHERE v.session_id = 1
-GROUP BY c.id, c.title;
-```
-
-### Security Measures
-
-1. Input Validation
-   - Request payload validation
-   - SQL injection prevention
-   - XSS protection
-
-2. Authentication & Authorization
-   - Session-based authentication
-   - Role-based access control
-   - Token expiration and rotation
-
-3. Data Protection
-   - CSRF protection
-   - Secure password hashing
-   - Rate limiting on sensitive endpoints
-
-## 📈 Future Improvements
-
-1. Implement real-time updates using WebSockets
-2. Add export functionality for reports
-3. Enhance analytics with machine learning insights
-4. Implement automated testing pipeline
-5. Add performance monitoring and logging
-
-# Team roles 
-frontend: Aryan and Waleed
-backend: everyone
-SQLite: Gaganpreet
+Performance Monitoring: Integrate tools like New Relic or Datadog to monitor application performance.
