@@ -10,7 +10,7 @@ Waleed Imran – Frontend Developer, Database Administrator, Backend Developer
 
 Duane Abbia-Kwakte – Backend Developer, Frontend Developer
 
-Gaganpreet – Backend Developer, Frontend Developer
+Gaganpreet Saini – Backend Developer, Frontend Developer
 
 # Project Overview & Goals
 The Sky Health Check Application enables software development teams to regularly assess their team health using the Spotify Health Check model. Teams submit votes on various health cards that reflect the current state of their team (Red, Amber, Green). This feedback is aggregated and displayed in an analytics dashboard for team leaders to monitor team morale and identify areas for improvement.
