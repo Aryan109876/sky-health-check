@@ -91,7 +91,7 @@ API Logic: Helped with the implementation of API endpoints for health check data
 
 Frontend Integration: Contributed to the development of interactive UI components and ensured smooth integration with the backend.
 
-🧪 Testing Documentation
+ Testing Documentation
 Testing played a crucial role in ensuring the stability and reliability of the application. The team performed extensive backend and frontend testing, covering all critical features.
 
 Backend Testing
