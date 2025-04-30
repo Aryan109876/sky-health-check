@@ -71,7 +71,7 @@ Database Management: Optimized queries to improve the speed of data retrieval.
 
 API Development: Worked on backend APIs for submitting votes and storing team health data.
 
-# Duane Abbia-Kwakte – Backend Developer, Frontend Developer
+# Duane Abbia-Kwakye – Backend Developer, Frontend Developer
 Backend Development: Developed and maintained API endpoints to handle the core health check functionality.
 
 Frontend Development: Worked with the team to create dynamic and responsive UI components for displaying team health data.
