@@ -8,7 +8,7 @@ Muhammed Mujib – Backend Developer, Frontend Developer
 
 Waleed Imran – Frontend Developer, Database Administrator, Backend Developer
 
-Duane Abbia-Kwakte – Backend Developer, Frontend Developer
+Duane Abbia-Kwakye – Backend Developer, Frontend Developer
 
 Gaganpreet Saini – Backend Developer, Frontend Developer
 
