@@ -97,7 +97,14 @@ Testing played a crucial role in ensuring the stability and reliability of the a
 Backend Testing
 The backend tests focus on validating API responses, role-based access control, and the voting functionality.
 
-Example API Endpoint Test
+# Gaganpreet Saini – Key Contributions
+Helped build basic backend functionality for voting and session handling.
+
+Assisted with frontend integration to connect UI components to the backend.
+
+Contributed minor improvements to data handling and role-based access features.
+
+# Example API Endpoint Test
 python
 Copy
 Edit
